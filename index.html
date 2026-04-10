@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulasi Gerak Jatuh Bebas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Simulasi Gerak Jatuh Bebas & Energi Mekanik</h2>
+
+<div class="container">
+  
+  <!-- KONTROL -->
+  <div class="controls">
+    <label>Ketinggian Awal (m): 
+      <span id="hValue">10</span>
+    </label>
+    <input type="range" id="heightSlider" min="1" max="50" value="10">
+
+    <div class="buttons">
+      <button onclick="startSim()">▶ Play</button>
+      <button onclick="pauseSim()">⏸ Pause/Resume</button>
+      <button onclick="resetSim()">🔄 Reset</button>
+    </div>
+  </div>
+
+  <!-- AREA SIMULASI -->
+  <div class="canvas-container">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- OUTPUT -->
+  <div class="output">
+    <p>Tinggi (h): <span id="h">0</span> m</p>
+    <p>Kecepatan (v): <span id="v">0</span> m/s</p>
+    <p>Energi Potensial (EP): <span id="ep">0</span> J</p>
+    <p>Energi Kinetik (EK): <span id="ek">0</span> J</p>
+    <p>Energi Mekanik (EM): <span id="em">0</span> J</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
